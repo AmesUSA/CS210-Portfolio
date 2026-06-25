@@ -1,0 +1,37 @@
+# CS 210 Portfolio Project: Corner Grocer Item Tracking Program
+
+## Project Summary
+
+For this project, I created a C++ item-tracking program for Corner Grocer. The program reads a text file containing a list of grocery items purchased throughout the day and counts how many times each item appears. The user can search for a specific item, print a full frequency list, view a text-based histogram, or exit the program. The program also creates a backup file named frequency.dat that stores the item frequency data.
+
+The problem this project solves is helping Corner Grocer understand which produce items are purchased most often. This information could help the store make better decisions about product placement, inventory, and customer shopping patterns.
+
+## What I Did Well
+
+One thing I did well was organizing the program around a class. I used a GroceryTracker class to keep the item frequency data private and used public functions to load the file, create the backup file, search for items, print the frequency list, and print the histogram. This helped keep the program organized and easier to understand.
+
+I also think the menu system works well because it gives the user clear choices and allows them to keep using the program until they choose to exit. The histogram output also makes the frequency data easier to read visually.
+
+## Where I Could Enhance the Code
+
+One way I could enhance the code would be to improve how the input file is handled. In a future version, I could allow the user to enter the file name instead of using one set file name. This would make the program more flexible and adaptable for different data files.
+
+I could also improve the program by adding better case handling. For example, if the file contains “Spinach” but the user searches for “spinach” with a lowercase letter, the program may treat them differently. Adding case-insensitive searching would make the program easier for users and help prevent search errors.
+
+## Challenges and How I Overcame Them
+
+The most challenging part of this project was working with file input and making sure the program could find the correct text file. Visual Studio can run programs from different folders, so the input file had to be in the correct location. I overcame this by testing the file location, checking the program output, and making sure the program could still create and read the needed data correctly.
+
+Another challenge was using a map to store item counts. Once I understood that the item name could be the key and the number of times it appeared could be the value, the logic made more sense. I used course resources, zyBooks, Visual Studio testing, and debugging as support tools.
+
+## Transferable Skills
+
+The skills from this project will transfer to many future programming assignments. File input and output are important because many programs need to read data from files or create reports. Using classes is also important because object-oriented programming helps organize larger programs. Maps are useful for storing paired data, such as names and counts, usernames and passwords, or products and prices.
+
+This project also helped me practice debugging, input validation, menu design, and writing readable code. Those skills will be useful in future C++, Java, Python, and software development projects.
+
+## Maintainability, Readability, and Adaptability
+
+I made the program maintainable by separating the logic into functions instead of putting everything into one large main function. Each function has a clear job, such as loading items, creating the backup file, printing the frequency list, or printing the histogram. This makes the program easier to update later.
+
+I made the code readable by using clear variable names, consistent formatting, and in-line comments to explain important sections. I made the program adaptable by using a map, which can handle different grocery items without needing separate variables for each one. If the input file changes, the program can still count whatever items are listed.
